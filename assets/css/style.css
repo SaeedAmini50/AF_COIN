@@ -161,38 +161,6 @@ body {
     color: #d7d7d798!important;
     font-size: 0.75rem!important;
 }
-.menu-buttons { 
-    width: 67%;
-    padding: 1rem 0.25rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 5rem;
-    background-color: rgba(218, 218, 218, 0.2);
-    border: 2px solid rgba(218, 218, 218, 0.03);
-    border-radius: 15px;
-    margin-left: 0.5rem;
-    margin-right: -1.25rem;
-}
-.button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0.25rem;
-    width: 33.3333%;
-}
-.button img {
-    margin-top: 0.5rem;
-}
-.button span {
-    margin-top: 0.25rem;
-    font-weight: bold;
-    color: #ffffff;
-}
-.b-r {
-    border-right: 2px solid rgba(218, 218, 218, 0.1);
-}
 
 /* Header Container */
 .header-container {
@@ -298,15 +266,57 @@ body {
     font-size: 12px;
 }
 
-/* Media query for mobile responsiveness */
-@media (max-width: 768px) { 
-    .progress-bar-container {
-        padding: 0 5px; 
-    }
-    .medal img {
-        width: 25px; 
-    }
-    .progress-bar {
-        margin: 0 10px; 
-    }
+.menu-container {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-buttons {
+    width: 100%; /* عرض تمام صفحه */
+    max-width: 1200px; /* حداکثر عرض برای جلوگیری از بیش‌ازحد بزرگ شدن */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2); /* شیشه‌ای */
+    backdrop-filter: blur(10px); /* فیلتر محو */
+    border-radius: 15px; /* گرد کردن گوشه‌ها */
+    border: 2px solid rgba(218, 218, 218, 0.03);
+}
+
+/* تنظیمات دکمه‌ها */
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 25%; /* تقسیم دکمه‌ها به‌صورت برابر */
+}
+
+/* تنظیمات عکس‌ها */
+.button img {
+    max-width: 100%;
+    height: auto; /* رسپانسیو شدن عکس‌ها */
+    margin-bottom: 0.5rem;
+}
+
+/* استایل متن دکمه‌ها */
+.button span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.menu-buttons .button-home {
+    position: relative; /* برای اعمال تغییرات به صورت دلخواه */
+    transform: translate(10px, -10px); /* به سمت راست (10px) و بالاتر (10px-) جابجا کردن */
+}
+
+/* اگر بخواهیم به آن استایلی خاص بدهیم که مشخص شود فعال است */
+.menu-buttons .button-home span {
+    color: yellow; /* رنگ زرد برای تاکید */
+    font-weight: bold;
 }
