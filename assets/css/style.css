@@ -244,6 +244,13 @@ body {
     margin: 0 auto;
 }
 
+.user-circle img {
+    width: 100%;   /* عرض تصویر به اندازه دایره */
+    height: 100%;  /* ارتفاع تصویر به اندازه دایره */
+    object-fit: cover; /* تصویر به صورت کامل نمایش داده شود بدون تغییر نسبت */
+    border-radius: 50%; /* برای گرد کردن تصویر */
+}
+
 .user-name {
     margin-top: 10px;
     color: #ffffff;
