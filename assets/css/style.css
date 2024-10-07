@@ -320,3 +320,68 @@ body {
     color: yellow; /* رنگ زرد برای تاکید */
     font-weight: bold;
 }
+
+
+
+
+
+.coin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.btn-cyan {
+    width: 80%; /* تنظیم عرض کمتر برای دکمه تقویت */
+    max-width: 240px; /* حداکثر عرض دکمه تقویت */
+    padding: 10px; /* تنظیم padding کمتر برای دکمه تقویت */
+    font-size: 16px; /* تنظیم فونت کوچکتر برای دکمه تقویت */
+    background-color: #17a2b8; /* فیروزه‌ای */
+}
+button {
+    width: 100%;
+    max-width: 300px; /* حداکثر عرض */
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px; /* گرد کردن گوشه‌ها */
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center; /* تنظیم برای قرار گرفتن علامت رعد برق در خط */
+    justify-content: center; /* قرار دادن متن و آیکون در مرکز دکمه */
+}
+
+.btn-blue {
+    background-color: #007bff; /* آبی تیره */
+}
+
+.btn-blue:hover {
+    background-color: #0056b3; /* رنگ تیره‌تر در حالت هاور */
+}
+
+.btn-cyan {
+    background-color: #17a2b8; /* فیروزه‌ای */
+}
+
+.btn-cyan:hover {
+    background-color: #117a8b; /* رنگ تیره‌تر در حالت هاور */
+}
+
+button .icon {
+    margin-left: 70px; /* فاصله بین متن و علامت رعد برق */
+    font-size: 25px; /* تنظیم اندازه علامت رعد برق */
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
