@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AF COIN</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <style>
         body {
-            background-color: #1b1b1b;
+            background-color: #0d1230;
             color: #f0f0f0;
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -18,8 +20,9 @@
             height: 100vh;
         }
 
-        header, footer {
-            background-color: #2c2c2c;
+        header,
+        footer {
+            background-color: #14213d;
             padding: 10px;
             display: flex;
             justify-content: center;
@@ -27,24 +30,26 @@
         }
 
         /* Header and Footer buttons */
-        .header-buttons, .footer-buttons {
+        .header-buttons,
+        .footer-buttons {
             display: flex;
             justify-content: space-around;
             width: 100%;
         }
 
         .btn-glass {
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(243, 156, 18, 0.7);
-            border-radius: 50%;
-            padding: 15px;
+            background: #273657;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 28%;
+            padding: 10px;
             width: 60px;
             height: 60px;
             color: #f0f0f0;
             text-align: center;
             font-size: 14px;
             cursor: pointer;
-            transition: background 0.3s, border-color 0.3s, transform 0.3s;
+            /* opacity: 0.4; */
+            /* transition: background 0.3s, border-color 0.3s, transform 0.3s; */
         }
 
         .btn-glass:hover {
@@ -114,7 +119,13 @@
             font-size: 1.2rem;
             margin-top: 10px;
         }
-
+       .f-botton{
+        padding-left: 14px;
+        font-size: x-large;
+       }
+.ican{
+    font-size: 35px;
+}
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .btn-glass {
@@ -125,6 +136,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header Section -->
@@ -150,10 +162,31 @@
     <!-- Footer Section -->
     <footer>
         <div class="footer-buttons">
-            <button class="btn-glass">Home</button>
-            <button class="btn-glass">Wallet</button>
-            <button class="btn-glass">Invite Friends</button>
-            <button class="btn-glass">Tasks</button>
+            <div>
+         <button class="btn-glass"><i class="material-icons ican">
+                home
+            </i></button><br>
+            <span class="f-botton">خانه</span></div>
+
+
+            <div>
+                <button class="btn-glass"><i class="material-icons ican">
+                        note
+                    </i></button><br>
+                <span class="f-botton">وظیفه</span>
+            </div>
+            <div>
+                <button class="btn-glass"><i class="material-icons ican">
+                        person
+                    </i></button><br>
+                <span class="f-botton">دعوت</span>
+            </div>
+            <div>
+                <button class="btn-glass"><i class="material-icons ican">
+                        home
+                    </i></button><br>
+                <span class="f-botton">سکه ها</span>
+            </div>
         </div>
     </footer>
 
@@ -179,4 +212,5 @@
         });
     </script>
 </body>
+
 </html>
