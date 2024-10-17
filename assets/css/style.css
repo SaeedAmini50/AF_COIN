@@ -1,387 +1,396 @@
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 a:active {
-    color: rgba(241,158,54,1);
+  color: rgba(241, 158, 54, 1);
 }
 html {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 .select-none {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /* Body Styling */
 body {
-    background: radial-gradient(circle, rgba(253,237,201,1) 0%, rgba(241,158,54,1) 15%, rgba(23,23,23,1) 75%);
-    background-repeat: no-repeat;
-    min-height: 100vh;   
+  background: radial-gradient(
+    circle,
+    rgb(9, 13, 36) 0%,
+    rgb(9, 13, 36) 15%,
+    rgb(9, 13, 36) 75%
+  );
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 /* Header Styling */
 .header {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
 }
 .header a {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 /* Squad Container */
 .squad-container {
-    margin: 1.75rem auto;
-    width: 80%;
-    height: 4.5rem;
-    border-radius: 15px;
-    background-color: rgba(50, 49, 49, 0.3);
-    border: 2px solid rgba(43, 42, 42, 0.05);
+  margin: 1.75rem auto;
+  width: 80%;
+  height: 4.5rem;
+  border-radius: 15px;
+  background-color: rgba(50, 49, 49, 0.3);
+  border: 2px solid rgba(43, 42, 42, 0.05);
 }
 
 .profile {
-    width: 3rem;
-    height: 3rem;
-    background-color: rgb(16, 16, 16);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(16, 16, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }
 .profile span {
-    font-size: 2rem;
-    color: rgba(151, 151, 151, 0.773);
+  font-size: 2rem;
+  color: rgba(151, 151, 151, 0.773);
 }
 
 /* Coin Count Container */
 .coin-count-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.25rem;
 }
 .coin-count-container img {
-    margin-right: 1rem;
-    width: 50px;
+  margin-right: 1rem;
+  width: 50px;
 }
 .coin-count-container h1 {
-    color: #ffffff;
-    font-size: 3.5rem;
+  color: #ffffff;
+  font-size: 3.5rem;
 }
 
 /* Progress Bar */
 .progress-bar {
-    width: 90%;
-    height: 1rem;
-    margin: 1.25rem auto;
-    border-radius: 30px;
-    background-color: rgba(218, 218, 218, 0.5);
+  width: 90%;
+  height: 1rem;
+  margin: 1.25rem auto;
+  border-radius: 30px;
+  background-color: rgba(218, 218, 218, 0.5);
 }
 .progress {
-    height: 100%;
-    background: linear-gradient(278deg, rgba(253,237,201,1) 2%, rgba(241,158,54,1) 52%, rgba(185,103,0,1) 88%);
-    border-radius: 30px;
-    width: 0; /* Initial width */
-    transition: width 0.5s ease-out;
+  height: 100%;
+  background: linear-gradient(
+    278deg,
+    rgba(253, 237, 201, 1) 2%,
+    rgba(241, 158, 54, 1) 52%,
+    rgba(185, 103, 0, 1) 88%
+  );
+  border-radius: 30px;
+  width: 0; /* Initial width */
+  transition: width 0.5s ease-out;
 }
 
 /* Rank Container */
 .rank-container {
-    display: flex;
-    justify-content: space-between; /* قرار دادن رتبه‌ها در دو طرف */
-    align-items: center;
-    width: 90%; /* هم‌راستا با progress-bar */
-    margin: 0 auto; /* مرکز کردن */
-    margin-top: 1rem; /* فاصله از progress-bar */
+  display: flex;
+  justify-content: space-between; /* قرار دادن رتبه‌ها در دو طرف */
+  align-items: center;
+  width: 90%; /* هم‌راستا با progress-bar */
+  margin: 0 auto; /* مرکز کردن */
+  margin-top: 1rem; /* فاصله از progress-bar */
 }
 .rank-item {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .rank-item img {
-    margin-right: 0.5rem; /* فاصله بین تصویر و متن */
+  margin-right: 0.5rem; /* فاصله بین تصویر و متن */
 }
 .rank {
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 1rem; /* اندازه فونت متن */
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1rem; /* اندازه فونت متن */
 }
 
 /* Coin Container */
 .coin-container {
-    position: relative;
-    margin-top: 1.5rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .coin-container span {
-    position: absolute;
-    z-index: 999;
-    font-size: 2rem;
-    color: #ffffff;
+  position: absolute;
+  z-index: 999;
+  font-size: 2rem;
+  color: #ffffff;
 }
 #coin {
-    transition: .1s;
-    transform-style: preserve-3d;
+  transition: 0.1s;
+  transform-style: preserve-3d;
 }
 
 /* Menu Container */
 .menu-container {
-    margin-top: 2.25rem;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 2.25rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .power {
-    display: flex;
-    justify-content: center;
-    margin-right: 0.5rem;
-    width: 33%;
+  display: flex;
+  justify-content: center;
+  margin-right: 0.5rem;
+  width: 33%;
 }
 .power-count {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .power-count span {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 .gray {
-    color: #d7d7d798!important;
-    font-size: 0.75rem!important;
+  color: #d7d7d798 !important;
+  font-size: 0.75rem !important;
 }
 
 /* Header Container */
 .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 0;
-    position: relative;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  position: relative;
+  width: 100%;
 }
 
 .mark {
-    font-size: 1.75rem; 
-    color: #fff; 
-    margin: 0;
+  font-size: 1.75rem;
+  color: #fff;
+  margin: 0;
 }
 
 .mark_bot {
-    font-size: 1.25rem; 
-    color: #fff; 
-    margin: 0;
+  font-size: 1.25rem;
+  color: #fff;
+  margin: 0;
 }
 .login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 10vh; /* ارتفاع کمتر از 100vh برای کاهش فاصله‌های اضافی */
-    padding: 1rem 0; /* اضافه کردن مقداری padding برای فضای متعادل */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh; /* ارتفاع کمتر از 100vh برای کاهش فاصله‌های اضافی */
+  padding: 1rem 0; /* اضافه کردن مقداری padding برای فضای متعادل */
 }
 
 .user-card {
-    text-align: center;
-    margin: 0 auto; /* برای جلوگیری از هر گونه فاصله ناخواسته */
+  text-align: center;
+  margin: 0 auto; /* برای جلوگیری از هر گونه فاصله ناخواسته */
 }
 
 .glass-square {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
 }
 
 .user-circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .user-circle img {
-    width: 100%;   /* عرض تصویر به اندازه دایره */
-    height: 100%;  /* ارتفاع تصویر به اندازه دایره */
-    object-fit: cover; /* تصویر به صورت کامل نمایش داده شود بدون تغییر نسبت */
-    border-radius: 50%; /* برای گرد کردن تصویر */
+  width: 100%; /* عرض تصویر به اندازه دایره */
+  height: 100%; /* ارتفاع تصویر به اندازه دایره */
+  object-fit: cover; /* تصویر به صورت کامل نمایش داده شود بدون تغییر نسبت */
+  border-radius: 50%; /* برای گرد کردن تصویر */
 }
 
 .user-name {
-    margin-top: 10px;
-    color: #ffffff;
-    font-size: 1.5rem;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 1.5rem;
 }
 
 /* Progress Bar Container */
 .progress-bar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    margin-top: 1rem;
-    padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0 10px;
 }
 
 /* Style for the progress bar */
 .progress-bar {
-    flex-grow: 1; 
-    margin: 0 15px; 
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 5px;
+  flex-grow: 1;
+  margin: 0 15px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
 }
 
 /* Style for the progress fill */
 .progress {
-    width: 50%; 
-    height: 100%;
-    background-color: green;
-    border-radius: 5px;
+  width: 50%;
+  height: 100%;
+  background-color: green;
+  border-radius: 5px;
 }
 
 /* Medal styles */
 .medal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .medal img {
-    width: 30px;
+  width: 30px;
 }
 .medal span {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .menu-container {
-    width: 100%;
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-buttons {
-    width: 100%; /* عرض تمام صفحه */
-    max-width: 1200px; /* حداکثر عرض برای جلوگیری از بیش‌ازحد بزرگ شدن */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.2); /* شیشه‌ای */
-    backdrop-filter: blur(10px); /* فیلتر محو */
-    border-radius: 15px; /* گرد کردن گوشه‌ها */
-    border: 2px solid rgba(218, 218, 218, 0.03);
+  width: 100%; /* عرض تمام صفحه */
+  max-width: 1200px; /* حداکثر عرض برای جلوگیری از بیش‌ازحد بزرگ شدن */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2); /* شیشه‌ای */
+  backdrop-filter: blur(10px); /* فیلتر محو */
+  border-radius: 15px; /* گرد کردن گوشه‌ها */
+  border: 2px solid rgba(218, 218, 218, 0.03);
 }
 
 /* تنظیمات دکمه‌ها */
 .button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    width: 25%; /* تقسیم دکمه‌ها به‌صورت برابر */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  width: 25%; /* تقسیم دکمه‌ها به‌صورت برابر */
 }
 
 /* تنظیمات عکس‌ها */
 .button img {
-    max-width: 100%;
-    height: auto; /* رسپانسیو شدن عکس‌ها */
-    margin-bottom: 0.5rem;
+  max-width: 100%;
+  height: auto; /* رسپانسیو شدن عکس‌ها */
+  margin-bottom: 0.5rem;
 }
 
 /* استایل متن دکمه‌ها */
 .button span {
-    font-weight: bold;
-    color: #ffffff;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .menu-buttons .button-home {
-    position: relative; /* برای اعمال تغییرات به صورت دلخواه */
-    transform: translate(10px, -10px); /* به سمت راست (10px) و بالاتر (10px-) جابجا کردن */
+  position: relative; /* برای اعمال تغییرات به صورت دلخواه */
+  transform: translate(
+    10px,
+    -10px
+  ); /* به سمت راست (10px) و بالاتر (10px-) جابجا کردن */
 }
 
 /* اگر بخواهیم به آن استایلی خاص بدهیم که مشخص شود فعال است */
 .menu-buttons .button-home span {
-    color: yellow; /* رنگ زرد برای تاکید */
-    font-weight: bold;
+  color: yellow; /* رنگ زرد برای تاکید */
+  font-weight: bold;
 }
 
-
-
-
-
 .coin-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
 }
 
 .btn-cyan {
-    width: 80%; /* تنظیم عرض کمتر برای دکمه تقویت */
-    max-width: 240px; /* حداکثر عرض دکمه تقویت */
-    padding: 10px; /* تنظیم padding کمتر برای دکمه تقویت */
-    font-size: 16px; /* تنظیم فونت کوچکتر برای دکمه تقویت */
-    background-color: #17a2b8; /* فیروزه‌ای */
+  width: 80%; /* تنظیم عرض کمتر برای دکمه تقویت */
+  max-width: 240px; /* حداکثر عرض دکمه تقویت */
+  padding: 10px; /* تنظیم padding کمتر برای دکمه تقویت */
+  font-size: 16px; /* تنظیم فونت کوچکتر برای دکمه تقویت */
+  background-color: #17a2b8; /* فیروزه‌ای */
 }
 button {
-    width: 100%;
-    max-width: 300px; /* حداکثر عرض */
-    padding: 15px;
-    font-size: 18px;
-    border: none;
-    border-radius: 30px; /* گرد کردن گوشه‌ها */
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    display: inline-flex;
-    align-items: center; /* تنظیم برای قرار گرفتن علامت رعد برق در خط */
-    justify-content: center; /* قرار دادن متن و آیکون در مرکز دکمه */
+  width: 100%;
+  max-width: 300px; /* حداکثر عرض */
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px; /* گرد کردن گوشه‌ها */
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center; /* تنظیم برای قرار گرفتن علامت رعد برق در خط */
+  justify-content: center; /* قرار دادن متن و آیکون در مرکز دکمه */
 }
 
 .btn-blue {
-    background-color: #007bff; /* آبی تیره */
+  background-color: #007bff; /* آبی تیره */
 }
 
 .btn-blue:hover {
-    background-color: #0056b3; /* رنگ تیره‌تر در حالت هاور */
+  background-color: #0056b3; /* رنگ تیره‌تر در حالت هاور */
 }
 
 .btn-cyan {
-    background-color: #17a2b8; /* فیروزه‌ای */
+  background-color: #17a2b8; /* فیروزه‌ای */
 }
 
 .btn-cyan:hover {
-    background-color: #117a8b; /* رنگ تیره‌تر در حالت هاور */
+  background-color: #117a8b; /* رنگ تیره‌تر در حالت هاور */
 }
 
 button .icon {
-    margin-left: 70px; /* فاصله بین متن و علامت رعد برق */
-    font-size: 25px; /* تنظیم اندازه علامت رعد برق */
+  margin-left: 70px; /* فاصله بین متن و علامت رعد برق */
+  font-size: 25px; /* تنظیم اندازه علامت رعد برق */
 }
 
 @media (max-width: 768px) {
-    button {
-        font-size: 16px;
-        padding: 12px;
-    }
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
 }
