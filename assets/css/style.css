@@ -3,16 +3,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color: #0d1230; */
 }
+
 a {
     text-decoration: none;
 }
+
 a:active {
-    color: rgba(241,158,54,1);
+    color: rgba(241, 158, 54, 1);
 }
+
 html {
     font-family: sans-serif;
 }
+
 .select-none {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -21,9 +26,9 @@ html {
 
 /* Body Styling */
 body {
-    background: radial-gradient(circle, rgba(253,237,201,1) 0%, rgba(241,158,54,1) 15%, rgba(23,23,23,1) 75%);
+    background: radial-gradient(circle, rgba(253, 237, 201, 1) 0%, rgba(241, 158, 54, 1) 15%, rgba(23, 23, 23, 1) 75%);
     background-repeat: no-repeat;
-    min-height: 100vh;   
+    min-height: 100vh;
 }
 
 /* Header Styling */
@@ -32,6 +37,7 @@ body {
     align-items: center;
     padding: 1rem;
 }
+
 .header a {
     margin-right: 1rem;
 }
@@ -55,6 +61,7 @@ body {
     align-items: center;
     border-radius: 5px;
 }
+
 .profile span {
     font-size: 2rem;
     color: rgba(151, 151, 151, 0.773);
@@ -68,10 +75,12 @@ body {
     align-items: center;
     margin-top: 2.25rem;
 }
+
 .coin-count-container img {
     margin-right: 1rem;
     width: 50px;
 }
+
 .coin-count-container h1 {
     color: #ffffff;
     font-size: 3.5rem;
@@ -85,34 +94,45 @@ body {
     border-radius: 30px;
     background-color: rgba(218, 218, 218, 0.5);
 }
+
 .progress {
     height: 100%;
-    background: linear-gradient(278deg, rgba(253,237,201,1) 2%, rgba(241,158,54,1) 52%, rgba(185,103,0,1) 88%);
+    background: linear-gradient(278deg, rgba(253, 237, 201, 1) 2%, rgba(241, 158, 54, 1) 52%, rgba(185, 103, 0, 1) 88%);
     border-radius: 30px;
-    width: 0; /* Initial width */
+    width: 0;
+    /* Initial width */
     transition: width 0.5s ease-out;
 }
 
 /* Rank Container */
 .rank-container {
     display: flex;
-    justify-content: space-between; /* قرار دادن رتبه‌ها در دو طرف */
+    justify-content: space-between;
+    /* قرار دادن رتبه‌ها در دو طرف */
     align-items: center;
-    width: 90%; /* هم‌راستا با progress-bar */
-    margin: 0 auto; /* مرکز کردن */
-    margin-top: 1rem; /* فاصله از progress-bar */
+    width: 90%;
+    /* هم‌راستا با progress-bar */
+    margin: 0 auto;
+    /* مرکز کردن */
+    margin-top: 1rem;
+    /* فاصله از progress-bar */
 }
+
 .rank-item {
     display: flex;
     align-items: center;
 }
+
 .rank-item img {
-    margin-right: 0.5rem; /* فاصله بین تصویر و متن */
+    margin-right: 0.5rem;
+    /* فاصله بین تصویر و متن */
 }
+
 .rank {
     font-weight: bold;
     color: #ffffff;
-    font-size: 1rem; /* اندازه فونت متن */
+    font-size: 1rem;
+    /* اندازه فونت متن */
 }
 
 /* Coin Container */
@@ -123,15 +143,46 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .coin-container span {
     position: absolute;
     z-index: 999;
     font-size: 2rem;
     color: #ffffff;
 }
+
 #coin {
     transition: .1s;
     transform-style: preserve-3d;
+}
+
+/* footer Hakima */
+.footer-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-glass {
+    background: #273657;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 28%;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    /* opacity: 0.4; */
+    /* transition: background 0.3s, border-color 0.3s, transform 0.3s; */
+}
+
+.f-botton {
+    padding-left: 14px;
+    font-size: x-large;
 }
 
 /* Menu Container */
@@ -141,25 +192,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #090d24;
 }
+
 .power {
     display: flex;
     justify-content: center;
     margin-right: 0.5rem;
     width: 33%;
 }
+
 .power-count {
     display: flex;
     flex-direction: column;
 }
+
 .power-count span {
     color: #ffffff;
     font-weight: bold;
     font-size: 1.5rem;
 }
+
 .gray {
-    color: #d7d7d798!important;
-    font-size: 0.75rem!important;
+    color: #d7d7d798 !important;
+    font-size: 0.75rem !important;
 }
 
 /* Header Container */
@@ -174,49 +230,66 @@ body {
 }
 
 .mark {
-    font-size: 1.75rem; 
-    color: #fff; 
+    font-size: 1.75rem;
+    color: #fff;
     margin: 0;
 }
 
 .mark_bot {
-    font-size: 1.25rem; 
-    color: #fff; 
+    font-size: 1.25rem;
+    color: #fff;
     margin: 0;
 }
+
 .login {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 10vh; /* ارتفاع کمتر از 100vh برای کاهش فاصله‌های اضافی */
-    padding: 1rem 0; /* اضافه کردن مقداری padding برای فضای متعادل */
+    min-height: 10vh;
+    /* ارتفاع کمتر از 100vh برای کاهش فاصله‌های اضافی */
+    padding: 1rem 0;
+    /* اضافه کردن مقداری padding برای فضای متعادل */
 }
 
 .user-card {
     text-align: center;
-    margin: 0 auto; /* برای جلوگیری از هر گونه فاصله ناخواسته */
+    margin: 0 auto;
+    /* برای جلوگیری از هر گونه فاصله ناخواسته */
 }
 
 .glass-square {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    backdrop-filter: blur(10px);
+    width: 120px;
+    /* Adjust as needed */
+    height: 120px;
+    /* Adjust as needed */
+    background: linear-gradient(135deg, #e18f9a, #dabf76, #9bb1bd, #c1a9e2);
+    /* Gradient colors */
+    border-radius: 20px;
+    /* Slightly rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* Optional, depending on spacing */
 }
 
 .user-circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
     overflow: hidden;
     margin: 0 auto;
+    background-color: #17a2b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .user-circle img {
-    width: 100%;   /* عرض تصویر به اندازه دایره */
-    height: 100%;  /* ارتفاع تصویر به اندازه دایره */
-    object-fit: cover; /* تصویر به صورت کامل نمایش داده شود بدون تغییر نسبت */
-    border-radius: 50%; /* برای گرد کردن تصویر */
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
 }
 
 .user-name {
@@ -238,8 +311,8 @@ body {
 
 /* Style for the progress bar */
 .progress-bar {
-    flex-grow: 1; 
-    margin: 0 15px; 
+    flex-grow: 1;
+    margin: 0 15px;
     height: 10px;
     background-color: #ddd;
     border-radius: 5px;
@@ -247,7 +320,7 @@ body {
 
 /* Style for the progress fill */
 .progress {
-    width: 50%; 
+    width: 50%;
     height: 100%;
     background-color: green;
     border-radius: 5px;
@@ -259,9 +332,11 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .medal img {
     width: 30px;
 }
+
 .medal span {
     font-size: 12px;
 }
@@ -275,15 +350,20 @@ body {
 }
 
 .menu-buttons {
-    width: 100%; /* عرض تمام صفحه */
-    max-width: 1200px; /* حداکثر عرض برای جلوگیری از بیش‌ازحد بزرگ شدن */
+    width: 100%;
+    /* عرض تمام صفحه */
+    max-width: 1200px;
+    /* حداکثر عرض برای جلوگیری از بیش‌ازحد بزرگ شدن */
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.2); /* شیشه‌ای */
-    backdrop-filter: blur(10px); /* فیلتر محو */
-    border-radius: 15px; /* گرد کردن گوشه‌ها */
+    background: rgba(255, 255, 255, 0.2);
+    /* شیشه‌ای */
+    backdrop-filter: blur(10px);
+    /* فیلتر محو */
+    border-radius: 15px;
+    /* گرد کردن گوشه‌ها */
     border: 2px solid rgba(218, 218, 218, 0.03);
 }
 
@@ -294,13 +374,15 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
-    width: 25%; /* تقسیم دکمه‌ها به‌صورت برابر */
+    width: 25%;
+    /* تقسیم دکمه‌ها به‌صورت برابر */
 }
 
 /* تنظیمات عکس‌ها */
 .button img {
     max-width: 100%;
-    height: auto; /* رسپانسیو شدن عکس‌ها */
+    height: auto;
+    /* رسپانسیو شدن عکس‌ها */
     margin-bottom: 0.5rem;
 }
 
@@ -311,13 +393,16 @@ body {
 }
 
 .menu-buttons .button-home {
-    position: relative; /* برای اعمال تغییرات به صورت دلخواه */
-    transform: translate(10px, -10px); /* به سمت راست (10px) و بالاتر (10px-) جابجا کردن */
+    position: relative;
+    /* برای اعمال تغییرات به صورت دلخواه */
+    transform: translate(10px, -10px);
+    /* به سمت راست (10px) و بالاتر (10px-) جابجا کردن */
 }
 
 /* اگر بخواهیم به آن استایلی خاص بدهیم که مشخص شود فعال است */
 .menu-buttons .button-home span {
-    color: yellow; /* رنگ زرد برای تاکید */
+    color: yellow;
+    /* رنگ زرد برای تاکید */
     font-weight: bold;
 }
 
@@ -335,48 +420,64 @@ body {
 }
 
 .btn-cyan {
-    width: 80%; /* تنظیم عرض کمتر برای دکمه تقویت */
-    max-width: 240px; /* حداکثر عرض دکمه تقویت */
-    padding: 10px; /* تنظیم padding کمتر برای دکمه تقویت */
-    font-size: 16px; /* تنظیم فونت کوچکتر برای دکمه تقویت */
-    background-color: #17a2b8; /* فیروزه‌ای */
+    width: 80%;
+    /* تنظیم عرض کمتر برای دکمه تقویت */
+    max-width: 240px;
+    /* حداکثر عرض دکمه تقویت */
+    padding: 10px;
+    /* تنظیم padding کمتر برای دکمه تقویت */
+    font-size: 16px;
+    /* تنظیم فونت کوچکتر برای دکمه تقویت */
+    background-color: #17a2b8;
+    /* فیروزه‌ای */
 }
+
 button {
     width: 100%;
-    max-width: 300px; /* حداکثر عرض */
+    max-width: 300px;
+    /* حداکثر عرض */
     padding: 15px;
     font-size: 18px;
     border: none;
-    border-radius: 30px; /* گرد کردن گوشه‌ها */
+    border-radius: 30px;
+    /* گرد کردن گوشه‌ها */
     cursor: pointer;
     color: white;
     font-weight: bold;
     text-align: center;
     transition: background-color 0.3s ease;
     display: inline-flex;
-    align-items: center; /* تنظیم برای قرار گرفتن علامت رعد برق در خط */
-    justify-content: center; /* قرار دادن متن و آیکون در مرکز دکمه */
+    align-items: center;
+    /* تنظیم برای قرار گرفتن علامت رعد برق در خط */
+    justify-content: center;
+    /* قرار دادن متن و آیکون در مرکز دکمه */
 }
 
 .btn-blue {
-    background-color: #007bff; /* آبی تیره */
+    background-color: #007bff;
+    /* آبی تیره */
 }
 
 .btn-blue:hover {
-    background-color: #0056b3; /* رنگ تیره‌تر در حالت هاور */
+    background-color: #0056b3;
+    /* رنگ تیره‌تر در حالت هاور */
 }
 
 .btn-cyan {
-    background-color: #17a2b8; /* فیروزه‌ای */
+    background-color: #17a2b8;
+    /* فیروزه‌ای */
 }
 
 .btn-cyan:hover {
-    background-color: #117a8b; /* رنگ تیره‌تر در حالت هاور */
+    background-color: #117a8b;
+    /* رنگ تیره‌تر در حالت هاور */
 }
 
 button .icon {
-    margin-left: 70px; /* فاصله بین متن و علامت رعد برق */
-    font-size: 25px; /* تنظیم اندازه علامت رعد برق */
+    margin-left: 70px;
+    /* فاصله بین متن و علامت رعد برق */
+    font-size: 25px;
+    /* تنظیم اندازه علامت رعد برق */
 }
 
 @media (max-width: 768px) {
