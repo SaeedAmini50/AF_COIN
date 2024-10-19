@@ -26,11 +26,15 @@ html {
 
 /* Body Styling */
 body {
-    background: radial-gradient(circle, rgba(253, 237, 201, 1) 0%, rgba(241, 158, 54, 1) 15%, rgba(23, 23, 23, 1) 75%);
+    background: radial-gradient(
+      circle,
+      rgb(9, 13, 36) 0%,
+      rgb(9, 13, 36) 15%,
+      rgb(9, 13, 36) 75%
+    );
     background-repeat: no-repeat;
     min-height: 100vh;
-}
-
+  }
 /* Header Styling */
 .header {
     display: flex;
