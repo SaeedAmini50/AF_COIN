@@ -14,6 +14,8 @@ a:active {
     color: rgba(241, 158, 54, 1);
 }
 
+
+
 html {
     font-family: sans-serif;
 }
@@ -22,6 +24,7 @@ html {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+   
 }
 
 /* Body Styling */
@@ -77,7 +80,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.25rem;
+    
 }
 
 .coin-count-container img {
@@ -87,13 +90,17 @@ body {
 
 .coin-count-container h1 {
     color: #ffffff;
-    font-size: 3.5rem;
+    font-size: 2.3rem;
 }
 
 /* Progress Bar */
 .progress-bar {
-    width: 90%;
+    width: 95%;
     height: 1rem;
+    justify-content: center;
+    align-items: center;
+
+
     margin: 1.25rem auto;
     border-radius: 30px;
     background-color: rgba(218, 218, 218, 0.5);
@@ -101,7 +108,6 @@ body {
 
 .progress {
     height: 100%;
-    background: linear-gradient(278deg, rgba(253, 237, 201, 1) 2%, rgba(241, 158, 54, 1) 52%, rgba(185, 103, 0, 1) 88%);
     border-radius: 30px;
     width: 0;
     /* Initial width */
@@ -114,7 +120,7 @@ body {
     justify-content: space-between;
     /* قرار دادن رتبه‌ها در دو طرف */
     align-items: center;
-    width: 90%;
+    width: 50%;
     /* هم‌راستا با progress-bar */
     margin: 0 auto;
     /* مرکز کردن */
@@ -142,7 +148,7 @@ body {
 /* Coin Container */
 .coin-container {
     position: relative;
-    margin-top: 1.5rem;
+    margin-top:1.5rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -191,12 +197,13 @@ body {
 
 /* Menu Container */
 .menu-container {
-    margin-top: 2.25rem;
+    margin-top: 7.25rem;
+    
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #090d24;
+    background-color: #a3a9c7;
 }
 
 .power {
@@ -241,7 +248,7 @@ body {
 
 .mark_bot {
     font-size: 1.25rem;
-    color: #fff;
+    color: #947575;
     margin: 0;
 }
 
@@ -251,8 +258,9 @@ body {
     align-items: center;
     min-height: 10vh;
     /* ارتفاع کمتر از 100vh برای کاهش فاصله‌های اضافی */
-    padding: 1rem 0;
+    padding: 0rem 0;
     /* اضافه کردن مقداری padding برای فضای متعادل */
+     transform: scale(0.65); /* 0.75 معادل 25% کوچکتر شدن */
 }
 
 .user-card {
@@ -324,9 +332,11 @@ body {
 
 /* Style for the progress fill */
 .progress {
+
+
     width: 50%;
     height: 100%;
-    background-color: green;
+    background-color:  rgba(0, 148, 255, 1);
     border-radius: 5px;
 }
 
@@ -347,7 +357,7 @@ body {
 
 .menu-container {
     width: 100%;
-    padding: 1rem 0;
+    padding: 0rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -362,11 +372,11 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.2);
+    background: #0d1230;
     /* شیشه‌ای */
     backdrop-filter: blur(10px);
     /* فیلتر محو */
-    border-radius: 15px;
+    border-radius: 0px;
     /* گرد کردن گوشه‌ها */
     border: 2px solid rgba(218, 218, 218, 0.03);
 }
@@ -419,18 +429,18 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 20px;
+    padding: 2px;
     width: 100%;
 }
 
 .btn-cyan {
     width: 80%;
     /* تنظیم عرض کمتر برای دکمه تقویت */
-    max-width: 240px;
+    max-width: 220px;
     /* حداکثر عرض دکمه تقویت */
     padding: 10px;
     /* تنظیم padding کمتر برای دکمه تقویت */
-    font-size: 16px;
+    font-size: 25px;
     /* تنظیم فونت کوچکتر برای دکمه تقویت */
     background-color: #17a2b8;
     /* فیروزه‌ای */
@@ -438,12 +448,12 @@ body {
 
 button {
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     /* حداکثر عرض */
     padding: 15px;
     font-size: 18px;
     border: none;
-    border-radius: 30px;
+    border-radius: 40px;
     /* گرد کردن گوشه‌ها */
     cursor: pointer;
     color: white;
@@ -458,12 +468,13 @@ button {
 }
 
 .btn-blue {
-    background-color: #007bff;
+    background-color: #0094ff;
     /* آبی تیره */
+    font-size: 50px;
 }
 
 .btn-blue:hover {
-    background-color: #0056b3;
+    background-color: #0097b2 #7ed957;
     /* رنگ تیره‌تر در حالت هاور */
 }
 
