@@ -99,8 +99,6 @@ body {
     height: 1rem;
     justify-content: center;
     align-items: center;
-
-
     margin: 1.25rem auto;
     border-radius: 30px;
     background-color: rgba(218, 218, 218, 0.5);
@@ -120,7 +118,7 @@ body {
     justify-content: space-between;
     /* قرار دادن رتبه‌ها در دو طرف */
     align-items: center;
-    width: 50%;
+    width: 70%;
     /* هم‌راستا با progress-bar */
     margin: 0 auto;
     /* مرکز کردن */
@@ -193,6 +191,8 @@ body {
 .f-botton {
     padding-left: 14px;
     font-size: x-large;
+    color: #ffffff;
+    
 }
 
 /* Menu Container */
@@ -235,7 +235,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem 0;
+    padding: 0rem 0;
     position: relative;
     width: 100%;
 }
@@ -284,24 +284,34 @@ body {
     padding: 10px;
     /* Optional, depending on spacing */
 }
-
 .user-circle {
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    object-fit: cover;
+    position: relative; /* موقعیت نسبی برای والد */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto;
-    background-color: #17a2b8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.user-circle img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
+.image-stack img {
+    position: absolute;
+    width: 300; /* سایز هر دو تصویر */
+    height: 300px;
+    border-radius: 50%; /* حالت دایره‌ای برای تصاویر */
+}
+/* 
+.image-1 {
+    z-index: 1;
+     top: 0px; 
+    left: -102px;
+
+}
+
+*/
+.image-2 {
+    z-index: 2; /* تصویر رویی */
+    top: 0px; /* تنظیم فاصله‌ی عمودی */
+    left: -102px; /* تنظیم فاصله‌ی افقی */
+    opacity: 1; /* مقداری شفافیت برای تصویر رویی (اختیاری) */
 }
 
 .user-name {
@@ -373,8 +383,9 @@ body {
     align-items: center;
     padding: 1rem;
     background: #0d1230;
-    /* شیشه‌ای */
-    backdrop-filter: blur(10px);
+    /* شیشه‌ای 
+    backdrop-filter: blur(10px)
+    ;*/
     /* فیلتر محو */
     border-radius: 0px;
     /* گرد کردن گوشه‌ها */
@@ -500,4 +511,9 @@ button .icon {
         font-size: 16px;
         padding: 12px;
     }
+}
+.image-icon-footer {
+    width: 150px; /* عرض مورد نظر */
+    height: 150px; /* ارتفاع مورد نظر */
+    object-fit: cover; /* برای جلوگیری از تغییر نسبت تصویر */
 }
