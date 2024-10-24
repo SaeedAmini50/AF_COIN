@@ -258,9 +258,9 @@ body {
 }
 
 .glass-square {
-    width: 120px;
+    width: 100px;
     /* Adjust as needed */
-    height: 120px;
+    height: 100px;
     /* Adjust as needed */
     background: linear-gradient(135deg, #e18f9a, #dabf76, #9bb1bd, #c1a9e2);
     /* Gradient colors */

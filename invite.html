@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive QR Code Popup</title>
+    <link rel="stylesheet" href="/assets/css/invite.css">
+</head>
+
+<body>
+    <!-- Invite Button -->
+    <button id="inviteButton">لینک دعوت شما</button>
+
+    <!-- Popup overlay (Initially hidden) -->
+    <div id="overlay" class="overlay" style="display: none;"></div>
+
+    <!-- QR Code Container (Initially hidden, acts as a popup) -->
+    <div id="qrCodeContainer" class="container popup" style="display: none;">
+        <div class="img">
+            <img src="/assets/images/barcode.png" alt="QR Code">
+        </div>
+        <!-- Buttons -->
+        <button id="copyButton" class="copy button">کپی</button>
+        <button id="cancelButton" class="cancel button">لغو</button>
+    </div>
+
+    <!-- Script -->
+    <script src="invite.js"></script>
+</body>
+
+</html>
