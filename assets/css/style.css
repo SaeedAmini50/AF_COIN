@@ -505,7 +505,7 @@ button {
   
     background-color: #0094ff;
     /* آبی تیره */
-    font-size:  3rem;
+    font-size:  2rem;
     width: 80%; /* کاهش سایز دکمه به 90% */
     margin: 0 auto; /* مرکز کردن از نظر عرضی */
     -webkit-tap-highlight-color: transparent; /* حذف هایلایت در مرورگرهای موبایل */
