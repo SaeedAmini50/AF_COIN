@@ -95,16 +95,19 @@ body {
 
 /* Progress Bar */
 .progress-bar {
-    width: 95%;
+    width: 80%; /* کاهش عرض به 80% */
+    margin: 0 auto; /* مرکز کردن از نظر عرضی */
+
     height: 1rem;
     justify-content: center;
     align-items: center;
-    margin: 1.25rem auto;
+   
     border-radius: 30px;
     background-color: rgba(218, 218, 218, 0.5);
 }
 
 .progress {
+    
     height: 100%;
     border-radius: 30px;
     width: 0;
@@ -150,6 +153,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 3rem; /* اضافه کردن فاصله از بالا */
+
 }
 
 .coin-container span {
@@ -189,10 +195,10 @@ body {
 }
 
 .f-botton {
-    padding-left: 14px;
+    padding-left: 10px;
     font-size: x-large;
     color: #ffffff;
-    
+    padding: 0; /* کاهش padding */
 }
 
 /* Menu Container */
@@ -241,15 +247,19 @@ body {
 }
 
 .mark {
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: #fff;
     margin: 0;
+    font-weight: 200; /* کاهش وزن فونت برای باریک‌تر شدن */
+
 }
 
 .mark_bot {
-    font-size: 1.25rem;
-    color: #947575;
+    font-size: 1.5rem;
+    color: #5a5555;
     margin: 0;
+
+    font-weight: 250; /* کاهش وزن فونت برای باریک‌تر شدن */
 }
 
 .login {
@@ -323,21 +333,24 @@ body {
 /* Progress Bar Container */
 .progress-bar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
     width: 100%;
     margin-top: 1rem;
     padding: 0 10px;
+    
 }
 
 /* Style for the progress bar */
 .progress-bar {
+    
     flex-grow: 1;
     margin: 0 15px;
     height: 10px;
     background-color: #ddd;
     border-radius: 5px;
+    margin: 0 auto;
 }
 
 /* Style for the progress fill */
@@ -441,7 +454,7 @@ body {
     align-items: center;
     gap: 20px;
     padding: 2px;
-    width: 100%;
+    width: 90%;
 }
 
 .btn-cyan {
@@ -479,13 +492,16 @@ button {
 }
 
 .btn-blue {
+    
     background-color: #0094ff;
     /* آبی تیره */
     font-size: 50px;
+    width: 80%; /* کاهش سایز دکمه به 90% */
+    margin: 0 auto; /* مرکز کردن از نظر عرضی */
 }
 
 .btn-blue:hover {
-    background-color: #0097b2 #7ed957;
+    background-color: #0097b2,#7ed957;
     /* رنگ تیره‌تر در حالت هاور */
 }
 
