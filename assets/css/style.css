@@ -264,7 +264,6 @@ body {
     font-size: 1.5rem;
     color: #5a5555;
     margin: 0;
-
     font-weight: 250; /* کاهش وزن فونت برای باریک‌تر شدن */
 }
 
@@ -514,19 +513,29 @@ button {
 }
 
 .btn-blue:hover {
-    background-color: #0097b2,#7ed957;
+    background-color: #0097b2;
     /* رنگ تیره‌تر در حالت هاور */
 }
 
+
 .btn-cyan {
-    background-color: #17a2b8;
-    /* فیروزه‌ای */
+    background: linear-gradient(to right, #17a2b8 30%, #54c588 50%, #7ed957 70%);
+    /* گرادیانت با یک هاله در وسط */
+    border: none;
+    
+   
+    color: white;
+     cursor: pointer;
+    transition: background 0.3s ease;
+    -webkit-tap-highlight-color: transparent; /* حذف هایلایت در مرورگرهای موبایل */
+   
 }
 
 .btn-cyan:hover {
-    background-color: #117a8b;
-    /* رنگ تیره‌تر در حالت هاور */
+    background: linear-gradient(to right, #7ed957 30%, #54c588 50%, #17a2b8 70%);
+    /* تغییر جهت گرادیانت هنگام هاور */
 }
+
 
 button .icon {
     margin-left: 70px;
@@ -545,4 +554,9 @@ button .icon {
     width: 120px; /* عرض مورد نظر */
     height: auto; /* ارتفاع مورد نظر */
     object-fit: cover; /* برای جلوگیری از تغییر نسبت تصویر */
+}
+
+.icon {
+    color: white;
+    font-size: 24px; /* تنظیم اندازه در صورت نیاز */
 }
