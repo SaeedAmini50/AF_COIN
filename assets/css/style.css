@@ -180,6 +180,8 @@ body {
 }
 
 .btn-glass {
+
+
     background: #273657;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 28%;
@@ -192,19 +194,23 @@ body {
     cursor: pointer;
     /* opacity: 0.4; */
     /* transition: background 0.3s, border-color 0.3s, transform 0.3s; */
+
+    -webkit-tap-highlight-color: transparent; /* حذف هایلایت در مرورگرهای موبایل */
+
 }
 
 .f-botton {
     padding-left: 10px;
-    font-size: x-large;
+    font-size: 1.75rem;
     color: #ffffff;
-    padding: 0; /* کاهش padding */
+   
+ 
 }
 
 /* Menu Container */
 .menu-container {
     margin-top: 7.25rem;
-    
+    padding: 10px;
     width: 90%;
     display: flex;
     justify-content: center;
@@ -401,8 +407,10 @@ body {
     ;*/
     /* فیلتر محو */
     border-radius: 0px;
+    gap: 20px; /* فاصله بین هر آیتم */
     /* گرد کردن گوشه‌ها */
     border: 2px solid rgba(218, 218, 218, 0.03);
+
 }
 
 /* تنظیمات دکمه‌ها */
@@ -422,6 +430,7 @@ body {
     height: auto;
     /* رسپانسیو شدن عکس‌ها */
     margin-bottom: 0.5rem;
+
 }
 
 /* استایل متن دکمه‌ها */
@@ -489,15 +498,19 @@ button {
     /* تنظیم برای قرار گرفتن علامت رعد برق در خط */
     justify-content: center;
     /* قرار دادن متن و آیکون در مرکز دکمه */
+    -webkit-tap-highlight-color: transparent; /* حذف هایلایت در مرورگرهای موبایل */
+
 }
 
 .btn-blue {
-    
+  
     background-color: #0094ff;
     /* آبی تیره */
     font-size: 50px;
     width: 80%; /* کاهش سایز دکمه به 90% */
     margin: 0 auto; /* مرکز کردن از نظر عرضی */
+    -webkit-tap-highlight-color: transparent; /* حذف هایلایت در مرورگرهای موبایل */
+
 }
 
 .btn-blue:hover {
@@ -529,7 +542,7 @@ button .icon {
     }
 }
 .image-icon-footer {
-    width: 150px; /* عرض مورد نظر */
-    height: 150px; /* ارتفاع مورد نظر */
+    width: 120px; /* عرض مورد نظر */
+    height: auto; /* ارتفاع مورد نظر */
     object-fit: cover; /* برای جلوگیری از تغییر نسبت تصویر */
 }
